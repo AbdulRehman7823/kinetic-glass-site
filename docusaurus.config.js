@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kineticGlass/kinetic-glass-site',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kineticGlass/kinetic-glass-site',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -71,7 +71,7 @@ const config = {
           },
           {to: '/blog', label: 'Large Components', position: 'left'},
           {
-            href: 'https://github.com/abdulman7823',
+            href: 'https://github.com/kineticGlass/kinetic-glass-site',
             className: "header-github-link",
             "aria-label": "GitHub repository",
             position: 'right',
@@ -101,15 +101,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discordapp.com/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/',
               },
             ],
           },
@@ -122,7 +122,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/kineticGlass/kinetic-glass-site',
               },
             ],
           },

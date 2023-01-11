@@ -1,0 +1,8 @@
+{
+  "label": "Media and Icons",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "This includes Media and Icon components"
+  }
+}
