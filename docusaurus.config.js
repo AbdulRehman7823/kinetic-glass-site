@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kinetic Glass',
-  tagline: 'UI maters, yeah!',
+  tagline: 'UI matters, yeah!',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -69,7 +69,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Large Components', position: 'left'},
+          {to: '/blog', label: 'Contributions', position: 'left'},
           {
             href: 'https://github.com/kineticGlass/kinetic-glass-site',
             className: "header-github-link",
@@ -117,7 +117,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Contribution',
                 to: '/blog',
               },
               {
