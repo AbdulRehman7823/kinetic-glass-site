@@ -2,10 +2,122 @@
 sidebar_position: 4
 ---
 
-### Button 
-Button is a very usefull component when you have to use some Ui stuff.
+This component acts as a wrapper component for other different components and allows to place them verticaly in the web page. 
 
+### Import
+```js title=" VBox.js" bash
+import {VBox} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+It is used where other components are needed to be placed verticaly on the web page. Different components such as **Box** are embedded in this component.
+```js title="VBox.js" bash
+<VBox
+      width="600px"
+      height="400px"
+      bg="secondary"
+      justify="space-between"
+      align="center"
+      wrap
+      mediaQueryType="min-width"
+      inner={
+        {border:"top",
+         borderSize:"3px",
+         borderColor:"red",
+         borderStyle:"solid",
+         css:{
+            borderBottom:"3px solid yellow",
+         }        
+        }
+      }
+    >       
+      <Box
+        bg="primary"
+        width="300px"
+        height="153px"
+        textAlign="center"
+        css={{ alignItems: "center" }}
+      >
+        child 1
+      </Box>
+      <Box
+        bg="success"
+        width="205px"
+        height="153px"
+        textAlign="center"
+        css={{ alignItems: "center" }}
+      >
+        child 1
+      </Box>
+      <Box
+        bg="glass"
+        width="205px"
+        height="153px"
+        textAlign="center"
+        css={{ alignItems: "center" }}
+      >
+        child 1
+      </Box>
+ </VBox>
+```
+### Responsive VBox
+It adds responsiveness to the components embedded in the VBox which are then placed differently depending on the screensize.
 
-```js title="sidebars.js"
-<Button props={props}/>
+```js title="VBox.js" bash
+ <VBox
+      width="600px"
+      height="400px"
+      bg="secondary"
+      justify="space-between"
+      align="center"
+      wrap
+      mediaQueryType="min-width"
+      responsive={[
+        "width:400px; background-color:red; height:600px",
+        "width:600px; background-color:yellow; height:400px",
+        "width:800px; background-color:green; height:300px",
+      ]}
+      breakpoints={[
+         "450px",
+          "600px",
+          "700px"
+      ]}
+      inner={
+        {border:"top",
+         borderSize:"3px",
+         borderColor:"red",
+         borderStyle:"solid",
+         css:{
+            borderBottom:"3px solid yellow",
+         }        
+        }
+      }
+    >       
+      <Box
+        bg="primary"
+        width="300px"
+        height="153px"
+        textAlign="center"
+        css={{ alignItems: "center" }}
+      >
+        child 1
+      </Box>
+      <Box
+        bg="success"
+        width="205px"
+        height="153px"
+        textAlign="center"
+        css={{ alignItems: "center" }}
+      >
+        child 1
+      </Box>
+      <Box
+        bg="glass"
+        width="205px"
+        height="153px"
+        textAlign="center"
+        css={{ alignItems: "center" }}
+      >
+        child 1
+      </Box>
+ </VBox>
 ```

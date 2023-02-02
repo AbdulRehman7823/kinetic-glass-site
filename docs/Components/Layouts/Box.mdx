@@ -1,11 +1,27 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-### Box 
-Box is a very usefull component when you have to use some Ui stuff.
+The Box component serves as a wrapper component for most of the CSS utility needs.
 
-
-```js title="sidebars.js"
-<Box props={props}/>
+### Import
+```js title=" Box.js" bash
+import {Box} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+The Box component is useful because it helps to create responsive layouts with ease and Provide a shorthand way to pass styles via prop such as bg instead of backgroundColor.
+```js title="Box.js" bash
+<Box
+  bg="primary"
+  childrens={<h1>Box</h1>}
+  css={{
+    borderRadius: 40
+  }}
+  height="150px"
+  m="10px"
+  p="30px"
+  shadow="lg"
+  textAlign="center"
+  width="800px"
+/>
 ```

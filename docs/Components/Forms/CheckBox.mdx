@@ -2,10 +2,43 @@
 sidebar_position: 2
 ---
 
-### CheckBox 
-CheckBox is a very usefull component when you have to use some Ui stuff.
+Checkbox component is used when a user needs to select multiple values. Checkboxes allow the user to select one or more items from several options.
 
-
-```js title="sidebars.js"
-<CheckBox props={props}/>
+### Import
+```js title="Checkbox.js" bash
+import {Checkbox} from  @kineticGlass/kinetic-glass-ui
 ```
+### Usage
+It is an example of a basic checkbox.
+```js title="Checkbox.js" bash
+<Checkbox color="primary">Checkbox</Checkbox>
+```
+### Size
+Use **size** prop to use checkbox of different sizes. You can use sm,md and lg to give size to your checkbox.
+```js title="Checkbox.js" bash
+<div>
+        <Checkbox size='lg'>Large</Checkbox>
+        <Checkbox size='md'>Medium</Checkbox>
+        <Checkbox size='sm'>Small</Checkbox>
+</div>
+```
+### Color
+Use **color** prop to change the color of your Checkbox. You can also add custom colors rather than using the default colors.
+```js title=" Checkbox.js" bash
+<div>
+    <Checkbox color="primary">Primary</Checkbox>
+    <Checkbox color="secondary">Secondary</Checkbox>
+    <Checkbox color="success">Success</Checkbox>
+    <Checkbox color="danger">Danger</Checkbox>
+    <Checkbox color="warning">Warning</Checkbox>
+    <Checkbox color="error">Error</Checkbox>
+</div>
+```
+### Checkbox with Label
+We can write some text next to checkbox to give an idea of what the checkbox intends here to do.
+
+```js title=" Checkbox.js" bash
+<Checkbox color="primary">Label</Checkbox>
+ 
+```
+

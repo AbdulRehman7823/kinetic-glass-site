@@ -2,10 +2,66 @@
 sidebar_position: 4
 ---
 
-### Input 
-Input is a very usefull component when you have to use some Ui stuff.
+This component is used to get user input.
 
-
-```js title="sidebars.js"
-<Input props={props}/>
+### Import
+```js title=" TextInput.js" bash
+import {TextInput} from  @kineticGlass/kinetic-glass-ui
 ```
+### Usage
+It is an example of a basic TextInput.
+```js title="TextInput.js" bash
+<TextInput width="250px" />
+```
+### Placeholder
+You can use the prop **placeholder** to provide users with a helper text to give them an idea of what type of text shoeld be written here.
+```js title=" TextInput.js" bash
+<TextInput placeholder="Placeholder" width="250px"/>
+```
+### Error
+You can use the prop **error** to show the users that they have made an error while entering the text.
+```js title=" TextInput.js" bash
+<TextInput error placeholder="Wrong Input" width="250px"/>
+```
+### Disabled
+You can use the prop **disabled** to disable the text input which doesn't allow the user to enter anything.
+```js title=" TextInput.js" bash
+<TextInput disabled placeholder="Disabled" width="250px"/>
+```
+### Read Only
+You can use the prop **readonly** if you want the user to just read the input and don't want them to enter anything.
+```js title=" TextInput.js" bash
+<TextInput readonly placeholder="Not Editable" width="250px"/>
+```
+### Clearable
+You can use the prop **clearable** to allow the user to clear everything they have entered into the input.
+```js title=" TextInput.js" bash
+const [value, setValue] = useState('');
+<TextInput
+    placeholder='Type and clear'
+    width='250px'
+    value={value}
+    onChange={e => setValue(e.target.value)}
+    clearable
+/>
+```
+### Size
+Use **size** prop to use TextInput of different sizes. You can use sm,md and lg to size your TextInputs.
+```js title=" TextInput.js" bash
+<Row>
+    <TextInput size='lg'>Large</TextInput>
+    <TextInput size='md'>Medium</TextInput>
+    <TextInput size='sm'>Small</TextInput>
+</Row>
+```
+### Color
+Use **color** prop to change the color of your TextInput. You can add custom colors rather than using the default colors.
+```js title=" TextInput.js" bash
+<Row>
+    <TextInput color="primary">Primary</TextInput>
+    <TextInput color="secondary">Secondary</TextInput>
+    <TextInput color="success">Success</TextInput>
+    <TextInput color="danger">Danger</TextInput>
+    <TextInput color="warning">Warning</TextInput>
+    <TextInput color="error">Error</TextInput>
+</Row>

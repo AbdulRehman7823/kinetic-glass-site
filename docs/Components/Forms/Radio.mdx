@@ -1,11 +1,44 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
+ 
+Radio component is used when only one choice needs to be selected from many options.
 
-### Radio 
-Radio is a very usefull component when you have to use some Ui stuff.
 
-
-```js title="sidebars.js"
-<Radio props={props}/>
+### Import
+```js title=" Radio.js" bash
+import {Radio} from  @kineticGlass/kinetic-glass-ui
 ```
+### Usage
+It is an example of a basic Radio.
+```js title="Radio.js" bash
+<Radio checked childrens={<p>This is a radio</p>} color="primary" size="2xl"/>
+```
+### Disabled
+You can use the prop **disabled** to disable the radio which doesn't allow the user to select it.
+```js title=" Radio.js" bash
+<Radio checked childrens={<p>This is a radio</p>} color="primary" disabled size="2xl"/>
+```
+### Size
+Use **size** prop to use Radio of different sizes. You can use sm,md,lg,xl,2xl and 3xl to size your Radios.
+```js title=" Radio.js" bash
+<Row>
+    <Radio  size='sm' checked/>
+    <Radio  size='md' checked/>
+    <Radio  size='lg' checked/>
+    <Radio  size='xl' checked/>
+    <Radio  size='2xl' checked/>
+    <Radio  size='3xl' checked/>
+</Row>
+```
+### Color
+Use **color** prop to change the color of your Radio. You can add custom colors rather than using the default colors.
+```js title=" Radio.js" bash
+<Row>
+    <Radio  size='sm' color="primary"  checked/>
+    <Radio  size='md' color="secondary" checked/>
+    <Radio  size='lg' color="danger"  checked/>
+    <Radio  size='xl' color="error"  checked/>
+    <Radio  size='2xl' color="success"  checked/>
+    <Radio  size='3xl'  color="warning" checked/>      
+</Row>

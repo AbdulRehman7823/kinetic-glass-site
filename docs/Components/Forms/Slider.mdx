@@ -1,11 +1,29 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
-### Slider 
-Slider is a very usefull component when you have to use some Ui stuff.
+Sliders allow users to make selections from a range of values.
 
-
-```js title="sidebars.js"
-<Slider props={props}/>
+### Import
+```js title=" Slider.js" bash
+import {Slider} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+It is an example of a basic Slider.
+```js title="Slider.js" bash
+<Slider
+  max={100}
+  min={1}
+  step={1}
+/>
+```
+### Color
+Use **color** prop to change the color of your Slider. You can add custom colors rather than using the default colors.
+```js title="Slider.js" bash
+<Slider
+  color="rgba(0, 0, 0, 1))"
+  max={100}
+  min={1}
+  step={1}
+/>
 ```

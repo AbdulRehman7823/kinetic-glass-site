@@ -2,17 +2,55 @@
 sidebar_position: 1
 ---
 
-### Button 
-Button is a very usefull component when you have to use some Ui stuff.
+A button is an interactive element that used to trigger different events. It enables to get the expected interactive feedback from the system following a particular command.
 
-
-```js title="sidebars.js"
-<Button props={props}/>
+### Import
+```js title=" Button.js" bash
+import {Button} from  @kineticGlass/kinetic-glass-ui
 ```
-aaaaaaa
-
-This is new Edit button 
-
-```js title="sidebars.js"
-<Button props={props}/>
+### Usage
+It is an example of a basic button.
+```js title="Button.js" bash
+<Button variant="text">Button</Button>
+```
+### Size
+Use **size** prop to use button of different sizes. You can use sm,md and lg to size your buttons.
+```js title=" Button.js" bash
+<div>
+        <Button size='lg'>Large</Button>
+        <Button size='md'>Medium</Button>
+        <Button size='sm'>Small</Button>
+</div>
+```
+### Color
+Use **color** prop to change the color of your button. You can add custom colors rather than using the default colors.
+```js title=" Button.js" bash
+<div>
+    <Button color="primary">Primary</Button>
+    <Button color="secondary">Secondary</Button>
+    <Button color="success">Success</Button>
+    <Button color="danger">Danger</Button>
+    <Button color="warning">Warning</Button>
+    <Button color="error">Error</Button>
+</div>
+```
+### Button with Icon
+Sometimes logos depict a message much better than a plain text. For example, if you want to use a button for deletion purpose you can label it with a download icon which'll give the user a clear indication of what the button intends to do.  
+You can add icons to the right and left of Button component using the **leftIcon** and **rightIcon** props respectively.
+```js title=" Button.js" bash
+<div>
+    <Button color="primary" leftIcon={<DownloadIcon/>}>Download</Button>
+    <Button color="primary" rightIcon={<DownloadIcon/>}>Download</Button>
+   
+</div>
+```
+### Loading Button
+Use **loading** prop to show loading state of a button. BUutton will show a spinner by default and its length will remain unchanged.
+```js title=" Button.js" bash
+<Button loading size="lg"> Click me</Button>
+```
+### Button with Ripple Effect
+You can use **ripple** prop to show ripple effect in button component after clicking on it.
+```js title=" Button.js" bash
+<Button ripple> Click me</Button>
 ```

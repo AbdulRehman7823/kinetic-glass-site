@@ -2,10 +2,76 @@
 sidebar_position: 3
 ---
 
-### Image 
-Image is a very usefull component when you have to use some Ui stuff.
+The Image component is used to display images.
 
-
-```js title="Image.js"
-<Image props={props}/>
+### Import
+```js title=" Image.js" bash
+import {Image} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+It is an example of a basic Image.
+```js title="Image.js" bash
+<Image src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000" />
+```
+### Customized
+You can use different props such as height, width to customize your image.  
+```js title="Image.js" bash
+<Image
+  fit="contain"
+  height="200px"
+  radius="33px"
+  shadow="lg"
+  src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+  width="200px"
+/>
+```
+### Size
+You can use different props such as height, width to size your images.
+```js title=" Image.js" bash
+<Row>
+    <Image width="50px" height="50px" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="100px" height="100px" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="200px" height="200px" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image />
+</Row>
+```
+### Radius
+You can use **radius** prop to change radius of the Image.
+```js title=" Image.js" bash
+<Row>
+    <Image width="50px" height="50px" radius="50px" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="100px" height="100px" radius="50px" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="200px" height="200px" radius="50px" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image />
+  </Row>
+```
+### isLoading
+You can use the prop **isLoading** to show the image is loading.
+```js title=" Image.js" bash
+<Row>
+    <Image width="50px" height="50px" isLoading src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="100px" height="100px" isLoading src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="200px" height="200px" isLoading src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image />
+</Row>
+```
+### Shadow
+Use **shadow** prop to give different shadows to your Image such as sm, md and lg.
+```js title=" Image.js" bash
+<Row>
+    <Image width="50px" height="50px" shadow="sm" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="100px" height="100px" shadow="md" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="200px" height="200px" shadow="lg" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image />
+</Row>
+```
+### Incorrect URL
+Use **alt** prop to provide an alternative title to show that the image url is incorret.
+```js title=" Image.js" bash
+ <Row>
+    <Image width="80px" height="50px" shadow="sm" alt="Alternative" src="https://.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="100px" height="100px" shadow="md" alt="not found" src="htt//img.freepik/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image width="200px" height="200px" shadow="lg" alt="Incorrect Path" src="https://img.freecom/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Image />
+  </Row>
 ```

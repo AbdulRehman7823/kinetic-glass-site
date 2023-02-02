@@ -6,24 +6,23 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #bb004b;
-  --ifm-color-primary-dark: #a80043;
-  --ifm-color-primary-darker: #9f0040;
-  --ifm-color-primary-darkest: #830034;
-  --ifm-color-primary-light: #ce0052;
-  --ifm-color-primary-lighter: #d70056;
-  --ifm-color-primary-lightest: #f30061;
+  --ifm-color-primary: #006280;
+  --ifm-color-primary-dark: #005873;
+  --ifm-color-primary-darker: #00536d;
+  --ifm-color-primary-darkest: #00455a;
+  --ifm-color-primary-light: #006c8d;
+  --ifm-color-primary-lighter: #007193;
+  --ifm-color-primary-lightest: #007fa6;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #af85ff;
-  --ifm-color-primary-dark: #965eff;
-  --ifm-color-primary-darker: #894bff;
-  --ifm-color-primary-darkest: #6311ff;
-  --ifm-color-primary-light: #c8acff;
-  --ifm-color-primary-lighter: #d5bfff;
-  --ifm-color-primary-lightest: #fbf9ff;
+  --ifm-color-primary: #00b38c;
+  --ifm-color-primary-dark: #00a17e;
+  --ifm-color-primary-darker: #009877;
+  --ifm-color-primary-darkest: #007d62;
+  --ifm-color-primary-light: #00c59a;
+  --ifm-color-primary-lighter: #00cea1;
+  --ifm-color-primary-lightest: #00e9b6;
 }
 header-github-link:hover {
   opacity: 0.6;

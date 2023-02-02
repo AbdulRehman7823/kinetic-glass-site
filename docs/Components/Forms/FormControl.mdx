@@ -1,11 +1,67 @@
 ---
-sidebar_position: 3
+sidebar_position: 7
 ---
 
-### FormControl 
-FormControl is a very usefull component when you have to use some Ui stuff.
+Form Control provides different contexts such as **'isValid'**, **'disabled'** and **'isVisited'** to form elements.
 
+### Import
+```js title=" FormControl.js" bash
+import {FormControl} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+It is an example of a basic FormControl.
+```js title="FormControl.js" bash
+() => {
+    const [value, setValue] = React.useState('');
+    const [isValid, setIsValid] = React.useState(true);
+    const [isVisited, setIsVisited] = React.useState(false);
+    const shouldShowError = !isValid && isVisited;
+    const onChange = (event) => {
+        const {value} = event.currentTarget;
+        setIsValid(!(value));
+        setValue(value);
+    };
 
-```js title="sidebars.js"
-<FormControl props={props}/>
+    return (
+        <FormControl
+            label='Email'
+            htmlFor='email'
+            error={
+                shouldShowError
+                ? 'Please type a valid email address'
+                : undefined
+            }
+            hint="You won't be able to change it later"
+            onBlur={() => setIsVisited(true) }
+        >
+            <TextInput
+                id='email'
+                width='250px'
+                value={value}
+                placeholder='Enter your email'
+                onChange={onChange}
+                error={shouldShowError}
+            />
+        </FormControl>
+    )
+}
+```
+
+### Disabled Form Input
+Use the **'disabled'** prop to disable the form input which doesn't allow the user to enter anything.
+
+```js title="FormControl.js" bash
+<FormControl
+    label='Username'
+    htmlFor='username'
+    hint="You can't change this field"
+    disabled
+>
+    <TextInput
+        id='username'
+        width='250px'
+        value='john_doe'
+        disabled
+    />
+</FormControl>
 ```

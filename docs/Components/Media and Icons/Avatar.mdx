@@ -2,10 +2,69 @@
 sidebar_position: 1
 ---
 
-### Avatar 
-Avatar is a very usefull component when you have to use some Ui stuff.
+The Avatar component is used to represent user, and displays the profile picture, initials or fallback icon.
 
 
-```js title="Avatar.js"
-<Avatar props={props}/>
+### Import
+```js title=" Avatar.js" bash
+import {Avatar} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+It is an example of a basic Avatar.
+```js title="Avatar.js" bash
+<Avatar
+  color="primary"
+  shape="round"
+  size="sm"
+/>
+```
+### Color
+Use **color** prop to change the color of your Avatar. You can add custom colors rather than using the default colors.
+```js title="Avatar.js" bash
+<Row>
+    <Avatar color="primary" size="xs"/>
+    <Avatar color="secondary" size="sm"/>
+    <Avatar  color="success" size="md"/>
+    <Avatar color="danger" size="lg"/>
+</Row>
+```
+### Size
+Use **size** prop to use Avatarof different sizes. You can use sm,md and lg to size your Avatar.
+```js title=" Avatar.js" bash
+ <Row>
+    <Avatar size="xs"/>
+    <Avatar size="sm"/>
+    <Avatar size="md"/>
+    <Avatar size="lg"/>
+  </Row>
+```
+### Badge
+Use **badge** prop to place badge on the Avatar.
+```js title=" Avatar.js" bash
+ <Row>
+    <Avatar size="xs" badge={{color:"green" ,size:"xs" }}/>
+    <Avatar size="sm" badge={{color:"red" ,size:"sm"}}/>
+    <Avatar size="md" badge={{color:"yellow" ,size:"md"}}/>
+    <Avatar size="lg" badge={{color:"purple" ,size:"md",text:"a"}}/>
+  </Row>
+```
+### Tags
+Use **icon** prop to place tag on the Avatar to show some notifications and stuff.
+```js title=" Avatar.js" bash
+<Row>
+    <Avatar  size="xs" shape="round" icon="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Avatar size="sm" shape="round" icon="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Avatar size="md" shape="round" icon="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+    <Avatar size="lg" shape="round" icon="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
+  </Row>
+```
+### Shape
+Use **shape** prop to give different shapes to your Avatar.
+```js title=" Avatar.js" bash
+ <Row>
+    <Avatar letter="R" size="xs" shape="round"/>
+    <Avatar letter="G" size="sm" shape="round"/>
+    <Avatar letter="D" size="md" shape="round"/>
+    <Avatar letter="Z" size="lg" shape="round"/>
+  </Row>
 ```

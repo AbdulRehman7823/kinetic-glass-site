@@ -1,11 +1,31 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
+ 
+Select component allow users pick a value from predefined list of options.
 
-### Select 
-Select is a very usefull component when you have to use some Ui stuff.
-
-
-```js title="sidebars.js"
-<Select props={props}/>
+### Import
+```js title=" Select.js" bash
+import {Select} from  @kineticGlass/kinetic-glass-ui
+```
+### Usage
+It is an example of a basic Select.
+```js title="Select.js" bash
+<Select
+  options={[
+    {
+      label: 'Chocolate',
+      value: 'chocolate'
+    },
+    {
+      label: 'Strawberry',
+      value: 'strawberry'
+    },
+    {
+      label: 'Vanilla',
+      value: 'vanilla'
+    }
+  ]}
+  width="250px"
+/>
 ```
